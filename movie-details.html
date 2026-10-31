@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details | Movie Hub UG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>MOVIE HUB <span>UG</span></h2>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="vj-movies.html">VJ Movies</a>
+        </div>
+    </nav>
+
+    <section class="details-container">
+
+        <div class="details-poster">
+            <div class="details-poster-text">
+                MOVIE HUB UG
+            </div>
+        </div>
+
+        <div class="details-info">
+
+            <p class="details-label">MOVIE INFORMATION</p>
+
+            <h1 id="movieTitle">The Last Mission</h1>
+
+           
+         <div class="details-meta">
+            <span id="movieRating">⭐ 8.5/10</span>
+            <span id="movieYear">2026</span>
+            <span id="movieGenre">Action</span>
+        </div>
+
+            <h3>About this movie</h3>
+
+        <p id="movieDescription">
+            An exciting adventure filled with action,
+            suspense and unexpected twists.
+            Experience the movie with Movie Hub UG.
+        </p>
+
+            <p><strong>Category:</strong> International</p>
+
+            <p><strong>Available narration:</strong> English</p>
+
+            <p><strong>Platform:</strong> Movie Hub UG</p>
+
+            <button class="watch-button">
+                ▶ WATCH NOW
+            </button>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 MOVIE HUB UG. All Rights Reserved.</p>
+        <p>Discover. Explore. Watch. Repeat.</p>
+    </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const title = params.get("title");
+
+        if (title) {
+            document.getElementById("movieTitle").textContent = title;
+            document.title = title + " | Movie Hub UG";
+        }
+    </script>
+
+</body>
+</html>

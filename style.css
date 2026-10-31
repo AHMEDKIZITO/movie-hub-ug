@@ -1,0 +1,678 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+background: #090909;
+color: #ffffff;
+font-family: Arial, sans-serif;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 22px 7%;
+background: #111111;
+border-bottom: 1px solid #292929;
+}
+
+.logo {
+font-size: 23px;
+font-weight: bold;
+}
+
+.logo span {
+color: #e8b923;
+}
+
+nav {
+display: flex;
+gap: 25px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 14px;
+}
+
+nav a:hover {
+color: #e8b923;
+}
+
+.login-btn {
+background: transparent;
+color: #e8b923;
+border: 1px solid #e8b923;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #090909 0%,
+            rgba(9, 9, 9, 0.95) 35%,
+            rgba(9, 9, 9, 0.45) 100%
+        ),
+        linear-gradient(135deg, #17130a, #30230b);
+
+    border-bottom: 2px solid #292929;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.watch-btn {
+    transition: 0.3s ease;
+    border-radius: 4px;
+}
+
+.watch-btn:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+.movie-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+}
+
+.poster {
+    height: 200px;
+    background: linear-gradient(135deg, #292929, #80601b);
+}
+
+.hero-content {
+max-width: 650px;
+}
+
+.tagline {
+color: #e8b923;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+
+.hero h1 {
+font-size: 65px;
+line-height: 1.05;
+margin-bottom: 20px;
+}
+
+.hero h1 span {
+color: #e8b923;
+}
+
+.description {
+color: #bbbbbb;
+line-height: 1.7;
+margin-bottom: 30px;
+}
+
+.watch-btn {
+display: inline-block;
+background: #e8b923;
+color: #090909;
+padding: 14px 28px;
+border: none;
+text-decoration: none;
+font-weight: bold;
+cursor: pointer;
+}
+
+.movie-section {
+padding: 55px 8%;
+}
+
+.movie-section h2 {
+margin-bottom: 25px;
+font-size: 28px;
+}
+
+.movie-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.movie-card {
+background: #151515;
+padding-bottom: 15px;
+border-radius: 5px;
+overflow: hidden;
+}
+
+.poster {
+height: 220px;
+background: linear-gradient(135deg, #292929, #55431a);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #e8b923;
+font-size: 20px;
+font-weight: bold;
+}
+
+.movie-card h3,
+.movie-card p {
+margin: 12px;
+}
+
+.movie-card p,
+.movie-section > p {
+color: #aaaaaa;
+}
+
+.premium {
+background: #17130a;
+text-align: center;
+}
+
+footer {
+background: #111111;
+padding: 25px;
+text-align: center;
+color: #888888;
+line-height: 2;
+}
+
+@media (max-width: 768px) {
+.navbar {
+flex-wrap: wrap;
+gap: 20px;
+}
+
+nav {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media (max-width: 450px) {
+.movie-grid {
+grid-template-columns: 1fr;
+}
+}
+
+/* MOVIE CATALOGUE */
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section-heading p {
+    color: #999;
+    margin-top: 8px;
+}
+#movieSearch{
+    background: #181818;
+    border: 1px solid #444;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 25px;
+    width: 420px;
+    max-width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 15px;
+}
+
+#movieSearch:focus {
+    border-color: #e8b923;
+    box-shadow: 0 0 8px rgba(232, 185, 35, 0.2);
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background: #151515;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+}
+
+.poster {
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.poster span {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    font-size: 14px;
+    color: #e8b923;
+}
+
+.poster h3 {
+    font-size: 25px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.poster small {
+    color: #e8b923;
+    margin-top: 8px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 2px;
+}
+
+.poster-one {
+    background: linear-gradient(145deg, #172d3b, #090909 80%);
+}
+
+.poster-two {
+    background: linear-gradient(145deg, #7b351c, #150a08 80%);
+}
+
+.poster-three {
+    background: linear-gradient(145deg, #34343f, #090909 80%);
+}
+
+.poster-four {
+    background: linear-gradient(145deg, #785a1b, #171006 80%);
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-info h3 {
+    margin-bottom: 8px;
+}
+
+.movie-info p {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #e8b923;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .movie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #movieSearch {
+        width: 100%;
+    }
+}
+
+/* UGANDAN CINEMA */
+
+.uganda-one {
+    background: linear-gradient(145deg, #17452d, #090909 85%);
+}
+
+.uganda-two {
+    background: linear-gradient(145deg, #78351c, #150908 85%);
+}
+
+.uganda-three {
+    background: linear-gradient(145deg, #57451b, #100e08 85%);
+}
+
+.uganda-four {
+    background: linear-gradient(145deg, #263e50, #090909 85%);
+}
+
+#ugandan {
+    border-top: 1px solid #292929;
+}
+
+/* VJ MOVIES PAGE */
+
+.vj-hero {
+    padding: 85px 8%;
+    background: linear-gradient(110deg, #090909, #30230b);
+    border-bottom: 1px solid #333;
+}
+
+.vj-hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.vj-hero h1 span {
+    color: #e8b923;
+}
+
+.vj-hero p:last-child {
+    color: #bbb;
+    line-height: 1.7;
+}
+
+.vj-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.vj-filter {
+    background: #181818;
+    color: white;
+    border: 1px solid #444;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.vj-filter:hover,
+.vj-filter.active {
+    background: #e8b923;
+    color: #090909;
+    border-color: #e8b923;
+}
+
+#vjSearch {
+    width: 420px;
+    max-width: 100%;
+    height: 50px;
+    padding: 15px 22px;
+    background: #181818;
+    border: 1px solid #444;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+#vjSearch:focus {
+    border-color: #e8b923;
+}
+
+.vj-heading {
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .vj-hero h1 {
+        font-size: 34px;
+    }
+}
+
+.vj-profiles {
+    padding: 40px 6%;
+    text-align: center;
+}
+
+.vj-profiles h2 {
+    color: #f5c518;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.vj-profiles p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.vj-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.vj-profile-card {
+    background: #181818;
+    padding: 25px 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid #292929;
+}
+
+.vj-profile-card:hover {
+    transform: translateY(-7px);
+    border-color: #f5c518;
+}
+
+.vj-avatar {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(135deg, #f5c518, #8a6500);
+    color: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+.vj-profile-card h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.vj-profile-card span {
+    color: #f5c518;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .vj-profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* vj-profile */
+.vj-profile-card {
+    cursor: pointer;
+}
+
+.vj-profile-card:focus-visible {
+    outline: 2px solid #f5c518;
+    outline-offset: 4px;
+}
+
+/* PROFESSIONAL MOVIE CARD ANIMATIONS */
+
+.movie-card {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(245, 197, 24, 0.25);
+}
+
+.poster {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.poster::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.movie-card:hover .poster::after {
+    opacity: 1;
+}
+
+.poster {
+    transition: transform 0.4s ease;
+}
+
+.movie-card:hover .poster {
+    transform: scale(1.04);
+}
+
+/* MOVIE DETAILS PAGE */
+
+.details-container {
+    display: flex;
+    gap: 50px;
+    padding: 70px 8%;
+    align-items: center;
+}
+
+.details-poster {
+    width: 350px;
+    height: 480px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #252525, #111);
+    border: 2px solid #f5c518;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-poster-text {
+    color: #f5c518;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details-info {
+    max-width: 600px;
+    color: white;
+}
+
+.details-label {
+    color: #f5c518;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.details-info h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.details-meta {
+    display: flex;
+    gap: 20px;
+    color: #f5c518;
+    margin-bottom: 30px;
+}
+
+.details-info h3 {
+    margin-bottom: 12px;
+}
+
+.details-info p {
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.watch-button {
+    background: #f5c518;
+    color: #111;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.watch-button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+        padding: 35px 5%;
+    }
+
+    .details-poster {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .details-info h1 {
+        font-size: 30px;
+    }
+}
+

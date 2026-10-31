@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub UG | Discover. Explore. Watch. Repeat.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">MOVIE <span>HUB UG</span></div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#ugandan">Ugandan</a>
+        <a href="vj-movies.html">VJ Movies</a>
+        <a href="#premium">Premium</a>
+    </nav>
+
+    <button class="login-btn">Sign In</button>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">YOUR WORLD OF ENTERTAINMENT</p>
+            <h1>DISCOVER.<br>EXPLORE.<br><span>WATCH.</span></h1>
+            <p class="description">
+                Your destination for Ugandan and international movies.
+                Discover stories, explore cultures and enjoy entertainment.
+            </p>
+            <a href="#movies" class="watch-btn">Explore Movies</a>
+        </div>
+    </section>
+
+   <section class="movie-section" id="movies">
+
+    <div class="section-heading">
+        <div>
+            <h2>Popular Movies</h2>
+            <p>Discover what's trending.</p>
+        </div>
+
+        <input
+            type="text"
+            id="movieSearch"
+            placeholder="Search movies..."
+        >
+    </div>
+
+    <div class="movie-grid" id="movieGrid">
+
+    <div class="movie-card"
+        data-description="An exciting action adventure full of suspense."
+        data-rating="8.5"
+        data-year="2026"
+        data-genre="Action"
+        data-vj="ice-p">
+            <div class="poster poster-one">
+                <span>01</span>
+                <h3>THE LAST HORIZON</h3>
+                <small>A CINEMATIC ADVENTURE</small>
+            </div>
+            <div class="movie-info">
+                <h3>The Last Horizon</h3>
+                <p>Action • Adventure</p>
+                <span class="rating">★ 8.5/10</span>
+            </div>
+    </div>
+
+        <div class="movie-card">
+            <div class="poster poster-two">
+                <span>02</span>
+                <h3>KAMPALA NIGHTS</h3>
+                <small>A STORY FROM UGANDA</small>
+            </div>
+            <div class="movie-info">
+                <h3>Kampala Nights</h3>
+                <p>Drama • Ugandan</p>
+                <span class="rating">★ 9.0/10</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="poster poster-three">
+                <span>03</span>
+                <h3>SHADOW RUN</h3>
+                <small>TRUST NO ONE</small>
+            </div>
+            <div class="movie-info">
+                <h3>Shadow Run</h3>
+                <p>Thriller • Action</p>
+                <span class="rating">★ 8.2/10</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="poster poster-four">
+                <span>04</span>
+                <h3>GOLDEN PROMISE</h3>
+                <small>LOVE NEVER FORGETS</small>
+            </div>
+            <div class="movie-info">
+                <h3>Golden Promise</h3>
+                <p>Romance • Drama</p>
+                <span class="rating">★ 8.7/10</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="movie-section" id="ugandan">
+<div class="section-heading">
+    <div>
+        <h2>Ugandan Cinema 🇺🇬</h2>
+        <p>Celebrating stories from home.</p>
+    </div>
+</div>
+
+<div class="movie-grid">
+
+    <div class="movie-card">
+        <div class="poster uganda-one">
+            <span>UG 01</span>
+            <h3>THE PEARL</h3>
+            <small>A STORY FROM THE PEARL OF AFRICA</small>
+        </div>
+        <div class="movie-info">
+            <h3>The Pearl</h3>
+            <p>Drama • Uganda</p>
+            <span class="rating">★ Featured</span>
+        </div>
+    </div>
+
+    <div class="movie-card"
+     data-description="An exciting adventure full of action and suspense."
+     data-rating="8.5"
+     data-year="2026"
+     data-genre="Action"
+     data-vj="ice-p">
+        <div class="poster uganda-two">
+            <span>UG 02</span>
+            <h3>KAMPALA LIFE</h3>
+            <small>STORIES OF THE CITY</small>
+        </div>
+        <div class="movie-info">
+            <h3>Kampala Life</h3>
+            <p>Drama • Uganda</p>
+            <span class="rating">★ Featured</span>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <div class="poster uganda-three">
+            <span>UG 03</span>
+            <h3>THE VILLAGE</h3>
+            <small>WHERE IT ALL BEGINS</small>
+        </div>
+        <div class="movie-info">
+            <h3>The Village</h3>
+            <p>Comedy • Uganda</p>
+            <span class="rating">★ Featured</span>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <div class="poster uganda-four">
+            <span>UG 04</span>
+            <h3>ONE DREAM</h3>
+            <small>NEVER STOP BELIEVING</small>
+        </div>
+        <div class="movie-info">
+            <h3>One Dream</h3>
+            <p>Romance • Uganda</p>
+            <span class="rating">★ Featured</span>
+        </div>
+    </div>
+
+</div>
+</section>
+
+    <section class="movie-section" id="vj">
+        <h2>VJ Movies 🎬</h2>
+        <p>Explore movies narrated by your favourite VJs.</p>
+    </section>
+
+    <section class="movie-section premium" id="premium">
+        <h2>Movie Hub UG Premium</h2>
+        <p>More entertainment. More possibilities.</p>
+        <button class="watch-btn">Explore Premium</button>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Movie Hub UG. All rights reserved.</p>
+    <p>Discover. Explore. Watch. Repeat.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
